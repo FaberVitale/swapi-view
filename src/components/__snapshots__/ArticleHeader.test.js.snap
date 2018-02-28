@@ -6,7 +6,7 @@ exports[`components/ArticleHeader  matches the snapshot 1`] = `
 >
   <div
     aria-hidden={false}
-    className="article-header-group flex-row justify-flex-end"
+    className="article-header-group flex-row justify-flex-end header-nav"
   >
     <span>
       test

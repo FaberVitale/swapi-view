@@ -2,7 +2,7 @@
 
 exports[`components/NavItemWidget matches the snapshots 1`] = `
 <div
-  className="flex-row align-items-center item-nav"
+  className="flex-row align-items-center"
 >
   <button
     aria-label="go back"
@@ -147,7 +147,7 @@ exports[`components/NavItemWidget matches the snapshots 1`] = `
 
 exports[`components/NavItemWidget matches the snapshots 2`] = `
 <div
-  className="flex-row align-items-center item-nav"
+  className="flex-row align-items-center"
 >
   <button
     aria-label="go back"
