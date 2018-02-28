@@ -30,6 +30,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "flow": "flow",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "precommit": "lint-staged",
     "postbuild": "node ./scripts/render-shell",
     "analyze": "source-map-explorer build/static/js/main.* --json"
