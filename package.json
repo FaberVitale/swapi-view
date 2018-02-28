@@ -1,7 +1,6 @@
 {
   "name": "swapi-viewer",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
   "dependencies": {
     "lodash.get": "^4.4.2",
     "lodash.throttle": "^4.1.1",
@@ -40,9 +39,6 @@
     "source-map-explorer": "^1.5.0"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,css,json}": [
-      "prettier --write",
-      "git add"
-    ]
+    "src/**/*.{js,jsx,css,json}": ["prettier --write", "git add"]
   }
 }
