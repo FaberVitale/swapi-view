@@ -1,6 +1,6 @@
 {
   "name": "swapi-view",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://FaberVitale.github.io/swapi-view",
   "dependencies": {
     "gh-pages": "^1.1.0",
