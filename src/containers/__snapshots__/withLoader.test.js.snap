@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`containers/withRouter default opt, match the snapshots 1`] = `"<p>Loading...</p>"`;
+
+exports[`containers/withRouter default opt, match the snapshots 2`] = `"<p>An error has occurred.</p>"`;
+
+exports[`containers/withRouter default opt, match the snapshots 3`] = `"<p>{&quot;a&quot;:2,&quot;b&quot;:3}</p>"`;
+
+exports[`containers/withRouter uses mapProps if defined and  data != null && error == null 1`] = `"<p>3</p>"`;

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Chip matches the snapshot 1`] = `
+<div
+  className="chip-container"
+  style={
+    Object {
+      "backgroundColor": "rgb(72, 72, 72)",
+      "deleteIconColor": "rgba(255, 255, 255, 0.26)",
+      "fontSize": 14,
+      "fontWeight": 400,
+      "shadow": "0 1px 6px rgba(0, 0, 0, 0.12),
+            0 1px 4px rgba(0, 0, 0, 0.12)",
+      "textColor": "rgba(255, 255, 255, 0.87)",
+    }
+  }
+>
+  <span
+    className="chip-span"
+  >
+    <strong>
+      test
+    </strong>
+  </span>
+</div>
+`;

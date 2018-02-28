@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`selectors/data getItemOrWookiee 1`] = `
+Object {
+  "data": Object {},
+  "links": Object {},
+  "meta": Object {},
+}
+`;
+
+exports[`selectors/data getItemOrWookiee 2`] = `
+Object {
+  "data": Object {},
+  "links": Object {},
+  "meta": Object {},
+}
+`;
+
+exports[`selectors/data getPage 1`] = `
+Object {
+  "items": Array [
+    "/people/item/1",
+    "/people/item/2",
+  ],
+  "next": "/people/page/6",
+  "previous": "/people/page/4",
+}
+`;

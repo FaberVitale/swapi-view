@@ -1,0 +1,16 @@
+[ignore]
+<PROJECT_ROOT>/build/.*
+<PROJECT_ROOT>/public/.*
+<PROJECT_ROOT>/\.vscode/.*
+<PROJECT_ROOT>/scripts/.*
+<PROJECT_ROOT>/coverage/.*
+<PROJECT_ROOT>/node_modules/array-flatten/.*
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+
+[strict]

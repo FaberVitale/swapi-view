@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reducers/index initial state  matches the snapshot 1`] = `
+Object {
+  "background": Object {
+    "status": 0,
+    "url": null,
+  },
+  "data": Object {
+    "films": Object {
+      "items": Object {},
+      "pages": Object {},
+      "wookiee": Object {},
+    },
+    "people": Object {
+      "items": Object {},
+      "pages": Object {},
+      "wookiee": Object {},
+    },
+    "planets": Object {
+      "items": Object {},
+      "pages": Object {},
+      "wookiee": Object {},
+    },
+    "search": Object {},
+    "species": Object {
+      "items": Object {},
+      "pages": Object {},
+      "wookiee": Object {},
+    },
+    "starships": Object {
+      "items": Object {},
+      "pages": Object {},
+      "wookiee": Object {},
+    },
+    "vehicles": Object {
+      "items": Object {},
+      "pages": Object {},
+      "wookiee": Object {},
+    },
+  },
+  "drawer": false,
+  "fetchState": Object {
+    "failed": Object {},
+    "pending": Array [],
+  },
+}
+`;

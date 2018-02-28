@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`util/query query/mapQueryToName works correctly 1`] = `"/people/search?q=a&page=2"`;
+
+exports[`util/query query/mapQueryToName works correctly 2`] = `"/people/search"`;

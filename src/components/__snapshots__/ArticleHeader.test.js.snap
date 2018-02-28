@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/ArticleHeader  matches the snapshot 1`] = `
+<header
+  className="article-header justify-space-between flex-column align-items-center"
+>
+  <div
+    aria-hidden={false}
+    className="article-header-group flex-row justify-flex-end"
+  >
+    <span>
+      test
+    </span>
+  </div>
+  <div
+    className="article-header-group justify-flex-start"
+  >
+    <h2
+      className="article-header-title"
+      style={
+        Object {
+          "color": "#ffeb3b",
+        }
+      }
+    >
+      test-test
+    </h2>
+  </div>
+</header>
+`;

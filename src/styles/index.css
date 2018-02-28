@@ -1,0 +1,277 @@
+/* except for a:focus, a:focus svg, button:focus svg these rules modify the layout while theme.js changes the theme*/
+#close-menu-button {
+  position: absolute !important;
+  right: 4px;
+  top: 4px;
+}
+/* it shows up only in edge and it is huge*/
+::-ms-clear {
+  display: none;
+}
+
+a:focus {
+  color: rgb(255, 235, 59) !important; /* primary2 yellow500 */
+}
+
+a:focus svg,
+button:focus svg {
+  fill: rgb(255, 235, 59) !important; /* primary2 yellow500 */
+}
+
+#main {
+  height: calc(100vh - 64px); /* topBar height is 64px*/
+  margin: 0 auto;
+  padding-top: 16px;
+  overflow: auto;
+  max-width: 1000px;
+  min-width: 300px;
+}
+
+.no-pointer-events {
+  pointer-events: none;
+}
+
+.pointer-events-auto {
+  pointer-events: auto;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.paper {
+  margin: 0 16px 16px 16px;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.home-container {
+  position: relative;
+  height: calc(100vh - 96px);
+}
+
+.home-form-container {
+  position: absolute;
+  z-index: 2;
+  width: 256px;
+  top: 8%;
+  right: 4%;
+}
+
+.search-form-container {
+  margin: 0 16px;
+  width: 65%;
+}
+
+.image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center left;
+}
+
+.slide-up-fade-in {
+  animation-name: fadeIn, slideInUp;
+  animation-duration: 600ms;
+  animation-delay: 200ms;
+  animation-fill-mode: both;
+  animation-timing-function: normal;
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 400ms;
+  animation-delay: 200ms;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+
+.loading {
+  margin-top: -64px;
+  justify-content: center;
+  height: 100%;
+}
+
+.loading-search {
+  margin-top: 64px;
+  height: 100%;
+  justify-content: center;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.article-header-title {
+  font-size: 26px;
+}
+
+.article-header {
+  padding: 0 16px;
+  align-items: flex-start;
+  min-height: 112px;
+}
+/*https://stackoverflow.com/questions/20626685/better-way-to-set-distance-between-flexbox-items*/
+.search-container {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 16px;
+  max-width: 500px;
+  margin-right: -8px;
+}
+
+.no-results-p {
+  text-align: center;
+  padding: 16px;
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.select-field {
+  width: 200px !important;
+  margin-right: 8px;
+}
+
+.autocomplete-container {
+  align-items: flex-start;
+  height: 100px;
+}
+
+.autocomplete-button {
+  margin-left: -64px !important;
+  align-self: center;
+}
+
+.autocomplete {
+  width: 200px !important;
+}
+
+.article-header-group {
+  width: 100%;
+  padding: 8px 0;
+}
+
+.toolbar {
+  display: flex;
+  padding: 16px;
+  flex-flow: row wrap;
+}
+
+.sidebar-nav {
+  margin-top: 56px;
+  height: calc(100vh - 56px);
+  overflow-x: hidden;
+}
+
+.sidebar-bottom {
+  width: 100%;
+}
+
+.failed-to-load-title {
+  font-size: 48px;
+}
+
+.failed-to-load-frown {
+  position: absolute;
+  top: 0;
+  right: 32px;
+  font-size: 240px;
+}
+
+.failed-to-load-article {
+  padding: 32px;
+  height: 360px;
+  position: relative;
+}
+
+.about-section {
+  margin: 16px 0;
+  padding: 16px;
+}
+
+.about-section > * {
+  margin-top: 16px;
+}
+
+.failed-to-load-footer {
+  position: absolute;
+  z-index: 4;
+  justify-content: center;
+  padding: 32px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.failed-to-load-p {
+  font-size: 24px;
+  margin-top: 64px;
+}
+
+.item-article {
+  padding: 0 16px;
+}
+
+.item-row-elem {
+  max-width: 300px;
+}
+
+.header-nav {
+  margin-left: 16px;
+}
+
+.chip-container {
+  border-radius: 16px;
+  height: max-content;
+  align-self: center;
+}
+
+.chip-span {
+  line-height: 32px;
+  padding: 0 12px;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.item-footer {
+  padding: 16px;
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 767px) {
+  .item-row {
+    flex-flow: column;
+    align-items: flex-start;
+  }
+
+  .item-row-elem + .item-row-elem {
+    margin-top: 16px;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 5%, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

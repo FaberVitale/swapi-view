@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`util/reactReduxConfig matches snapshot 1`] = `
+<div>
+  <p>
+    {"match":{"path":"/:e/:id","url":"/a/4","isExact":true,"params":{"e":"a","id":"4"}},"search":"","state":true}
+  </p>
+  <p>
+    {"match":{"path":"/:e/:id","url":"/a/4","isExact":true,"params":{"e":"a","id":"4"}},"search":""}
+  </p>
+</div>
+`;

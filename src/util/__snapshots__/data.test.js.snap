@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`util/data transformItem 1`] = `
+Object {
+  "data": Object {
+    "birth_year": "19BBY",
+    "eye_color": "blue",
+    "gender": "male",
+    "hair_color": "blond",
+    "height": "172",
+    "mass": "77",
+    "name": "Luke Skywalker",
+    "skin_color": "fair",
+  },
+  "links": Object {
+    "films": Array [
+      "https://swapi.co/api/films/2/",
+      "https://swapi.co/api/films/6/",
+      "https://swapi.co/api/films/3/",
+      "https://swapi.co/api/films/1/",
+      "https://swapi.co/api/films/7/",
+    ],
+    "homeworld": "https://swapi.co/api/planets/1/",
+    "species": Array [
+      "https://swapi.co/api/species/1/",
+    ],
+    "starships": Array [
+      "https://swapi.co/api/starships/12/",
+      "https://swapi.co/api/starships/22/",
+    ],
+    "vehicles": Array [
+      "https://swapi.co/api/vehicles/14/",
+      "https://swapi.co/api/vehicles/30/",
+    ],
+  },
+  "meta": Object {
+    "created": "2014-12-09T13:50:51.644000Z",
+    "edited": "2014-12-20T21:17:56.891000Z",
+    "url": "https://swapi.co/api/people/1/",
+  },
+}
+`;
+
+exports[`util/data transformItem 2`] = `
+Object {
+  "data": Object {
+    "akooakhuanraaoahoowh": "1000",
+    "aoworcrcraahwh": "shhuwhrranwo, rcraahwhwwoorcwocaoc",
+    "churcwwraoawo_ohraaoworc": "8",
+    "oaanahscraaowo": "aowoscakworcraaowo, aorcooakahoaraan",
+    "oorcrhahaoraan_akworcahoowa": "4818",
+    "rcooaoraaoahoowh_akworcahoowa": "24",
+    "rrrcrahoahaoro": "1 caorawhwararcwa",
+    "waahrascwoaoworc": "10200",
+    "whrascwo": "Yrahoahwh IV",
+  },
+  "links": Object {
+    "rcwocahwawowhaoc": Array [],
+    "wwahanscc": Array [
+      "acaoaoakc://cohraakah.oaoo/raakah/wwahanscc/1/",
+    ],
+  },
+  "meta": Object {
+    "hurcan": "acaoaoakc://cohraakah.oaoo/raakah/akanrawhwoaoc/3/",
+    "oarcworaaowowa": "2014-12-10T11:37:19.144000Z",
+    "wowaahaowowa": "2014-12-20T20:58:18.421000Z",
+  },
+}
+`;

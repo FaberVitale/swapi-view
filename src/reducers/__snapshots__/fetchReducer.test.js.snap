@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reducers/fetchReducer adds failed[action.request.name] = action.cause on fetchFailAction 1`] = `
+Object {
+  "failed": Object {
+    "/people/page/5": "500",
+  },
+  "pending": Array [],
+}
+`;
+
+exports[`reducers/fetchReducer adds request.name to pending if a fetchResource action is passed 1`] = `
+Object {
+  "failed": Object {},
+  "pending": Array [
+    "/people/page/5",
+  ],
+}
+`;
+
+exports[`reducers/fetchReducer removes request.name from pending, if present, on a fetchSuccess action 1`] = `
+Object {
+  "failed": Object {},
+  "pending": Array [],
+}
+`;
+
+exports[`reducers/fetchReducer returns the initial state if undefined is passed 1`] = `
+Object {
+  "failed": Object {},
+  "pending": Array [],
+}
+`;
+
+exports[`reducers/fetchReducer returns the previous state if an unused action type is used 1`] = `
+Object {
+  "failed": Object {},
+  "pending": Array [],
+}
+`;
+
+exports[`reducers/fetchReducer uses a generic "error" string if action.cause is falsy 1`] = `
+Object {
+  "failed": Object {
+    "/people/page/5": "error",
+  },
+  "pending": Array [],
+}
+`;
