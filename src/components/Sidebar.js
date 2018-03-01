@@ -63,9 +63,7 @@ class Sidebar extends Component<Props> {
   }
 
   handleRequestChange = (open: boolean, reason: string) => {
-    if (this.props.isOpen !== open) {
-      this.props.toggleDrawer(open);
-    }
+    this.props.toggleDrawer(open);
   };
 
   //we use these 2 listeners to implement the focus trap
@@ -89,6 +87,11 @@ class Sidebar extends Component<Props> {
 
   closeDrawer = (_?: mixed) => {
     this.props.toggleDrawer(false);
+  };
+
+  onButtonCLick = (evt: SyntheticMouseEvent<*>) => {
+    evt.preventDefault();
+    this.closeDrawer();
   };
 
   //on close focus is returned to the activtor, on open focus is set to the first link

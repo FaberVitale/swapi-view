@@ -7,9 +7,7 @@ import type { State } from "../reducers";
 import type { Dispatch } from "redux";
 import { connect } from "react-redux";
 import { isDrawerOpen } from "../selectors/drawer";
-import { compose } from "redux";
 import { drawerRequestChange } from "../action/creators";
-import _throttle from "lodash.throttle";
 
 type DispatchProps = {
   load: () => void
@@ -77,9 +75,7 @@ export const mapStateToPropsDrawer = (state: State) => ({
 // applied to a "click" event, if Enter is input
 // see: https://github.com/mui-org/material-ui/issues/9344
 export const mapDispatchToPropsDrawer = (dispatch: Dispatch<Action>) => ({
-  toggleDrawer: _throttle(compose(dispatch, drawerRequestChange), 300, {
-    trailing: false
-  })
+  toggleDrawer: (value: boolean) => dispatch(drawerRequestChange(value))
 });
 
 export const connectDrawer = (addDispatchTopProps?: boolean = false) => {
