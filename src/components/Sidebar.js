@@ -14,7 +14,7 @@ type Props = {
   location: Location
 };
 
-const linkSelector = 'a:not([aria-disabled="true"])';
+const linkSelector = '#drawer-container a:not([aria-disabled="true"])';
 const activator = ".App > header button";
 
 /* A left side drawer that implements a11y features behaving like a modal,
@@ -139,7 +139,7 @@ class Sidebar extends Component<Props> {
           <IconButton
             id="close-menu-button"
             aria-label="close menu"
-            onClick={this.closeDrawer}
+            onClick={this.onButtonCLick}
             tabIndex={this.props.isOpen ? 0 : -1}
           >
             <Close />
