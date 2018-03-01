@@ -14,7 +14,7 @@ type Props = {
   location: Location
 };
 
-const linkSelector = 'a:not([aria-disabled="true"])';
+const linkSelector = '#drawer-container a:not([aria-disabled="true"])';
 const activator = ".App > header button";
 
 /* A left side drawer that implements a11y features behaving like a modal,
@@ -63,9 +63,7 @@ class Sidebar extends Component<Props> {
   }
 
   handleRequestChange = (open: boolean, reason: string) => {
-    if (this.props.isOpen !== open) {
-      this.props.toggleDrawer(open);
-    }
+    this.props.toggleDrawer(open);
   };
 
   //we use these 2 listeners to implement the focus trap
@@ -89,6 +87,11 @@ class Sidebar extends Component<Props> {
 
   closeDrawer = (_?: mixed) => {
     this.props.toggleDrawer(false);
+  };
+
+  onButtonCLick = (evt: SyntheticMouseEvent<*>) => {
+    evt.preventDefault();
+    this.closeDrawer();
   };
 
   //on close focus is returned to the activtor, on open focus is set to the first link
@@ -136,7 +139,7 @@ class Sidebar extends Component<Props> {
           <IconButton
             id="close-menu-button"
             aria-label="close menu"
-            onClick={this.closeDrawer}
+            onClick={this.onButtonCLick}
             tabIndex={this.props.isOpen ? 0 : -1}
           >
             <Close />

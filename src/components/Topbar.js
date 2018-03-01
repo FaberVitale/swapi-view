@@ -14,7 +14,8 @@ type Props = {
  * its button opens the drawer
  */
 export class Topbar extends PureComponent<Props> {
-  onIconClick = (_: SyntheticMouseEvent<*>) => {
+  onIconClick = (e: SyntheticMouseEvent<*>) => {
+    e.preventDefault();
     this.props.toggleDrawer(true);
   };
 

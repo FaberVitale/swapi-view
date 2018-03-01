@@ -1,55 +1,113 @@
 import React from "react";
-import { MemoryRouter, withRouter } from "react-router-dom";
-import { mount } from "enzyme";
 import ScrollOnPathnameChange from "./ScrollOnPathnameChange";
-
+import ReactDOM from "react-dom";
+import { MemoryRouter as Router, Route } from "react-router-dom";
 describe("components/ScrollOnPathnameChange", () => {
-  let realScrollTo,
-    mockScrollTo = jest.fn(() => {});
+  let root;
+  let buttonId = "change-id";
+  let push,
+    testCompId = "test-comp",
+    appId = "app";
+  const containerStyle = {
+    width: 200,
+    height: 300,
+    overflow: "scroll"
+  };
 
-  let push;
+  const childStyle = {
+    width: 400,
+    height: 500
+  };
 
-  const GetPush = withRouter(props => {
-    if (!push) {
-      push = props.history.push;
-    }
+  const GetPush = ({ history }) => {
+    push = history.push;
     return null;
-  });
+  };
 
-  const wrapper = mount(
-    <MemoryRouter initialEntries={["/"]} initialIndex={0}>
-      <main>
-        <GetPush />
-        <ScrollOnPathnameChange />
-      </main>
-    </MemoryRouter>
-  );
+  class TestComp extends React.Component {
+    render() {
+      return (
+        <div id="test-comp">
+          <ScrollOnPathnameChange id={this.props.id} pause={false} />
+          <div id="container-1" style={containerStyle}>
+            <p style={childStyle}>{"elem"}</p>
+          </div>
+          <div id="container-2" style={containerStyle}>
+            <p style={childStyle}>{"elem"}</p>
+          </div>
+        </div>
+      );
+    }
+  }
+
+  class TestApp extends React.Component {
+    state = {
+      id: "container-1"
+    };
+
+    handleClick = () => {
+      this.setState({
+        id: "container-2"
+      });
+    };
+
+    render() {
+      return (
+        <Router initialEntries={["/"]} initialIndex={0}>
+          <div id={appId}>
+            <Route path="*" component={GetPush} />
+            <div>
+              <TestComp id={this.state.id} />
+              <button type="button" id={buttonId} onClick={this.handleClick} />
+            </div>
+          </div>
+        </Router>
+      );
+    }
+  }
 
   beforeAll(() => {
-    if (typeof window.scrollTo === "function") {
-      realScrollTo = window.scrollTo;
-      window.scrollTo = mockScrollTo;
-    }
+    root = document.createElement("div");
+    root.id = "root";
+
+    document.body.appendChild(root);
+    ReactDOM.render(<TestApp />, root);
   });
 
   afterAll(() => {
-    if (typeof window.scrollTo === "function") {
-      window.scrollTo = realScrollTo;
-    }
-    wrapper.unmount();
-  });
-
-  afterEach(() => {
-    mockScrollTo.mockClear();
+    ReactDOM.unmountComponentAtNode(root);
+    document.body.removeChild(root);
   });
 
   it("renders nothing", () => {
-    expect(wrapper.find("main").html()).toBe("<main></main>");
+    expect(document.getElementById(testCompId).childElementCount).toBe(2);
   });
 
   it("scrolls to top on Pathname change", () => {
-    push("a/b/c");
+    let cont1 = document.getElementById("container-1");
 
-    expect(mockScrollTo.mock.calls[0]).toEqual([0, 0]);
+    cont1.scrollTop = 100;
+    cont1.scrollLeft = 100;
+
+    push("/a/b");
+
+    expect(cont1.scrollTop).toBe(0);
+    expect(cont1.scrollLeft).toBe(0);
+  });
+
+  it("updates the element if props.id changes", () => {
+    let button = document.getElementById(buttonId);
+
+    button.click();
+
+    let cont2 = document.getElementById("container-2");
+
+    cont2.scrollTop = 100;
+    cont2.scrollLeft = 100;
+
+    push("/a/b/c");
+
+    expect(cont2.scrollTop).toBe(0);
+    expect(cont2.scrollLeft).toBe(0);
   });
 });

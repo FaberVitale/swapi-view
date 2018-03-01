@@ -45,7 +45,10 @@ class App extends Component<Props, State> {
         <Router>
           <MuiThemeProvider muiTheme={theme}>
             <div className="App">
-              <ScrollOnPathnameChange />
+              <ScrollOnPathnameChange
+                id="main"
+                pause={this.state.firstRender}
+              />
               <Topbar />
               {!this.state.firstRender && (
                 <Sidebar firstRender={this.state.firstRender} />
