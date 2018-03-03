@@ -8,8 +8,6 @@
   },
   "dependencies": {
     "gh-pages": "^1.1.0",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "lodash.get": "^4.4.2",
     "lodash.throttle": "^4.1.1",
     "material-ui": "^0.20.0",
