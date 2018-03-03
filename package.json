@@ -1,6 +1,6 @@
 {
   "name": "swapi-view",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "homepage": "https://FaberVitale.github.io/swapi-view",
   "repository": {
     "type": "git",
@@ -47,9 +47,6 @@
     "source-map-explorer": "^1.5.0"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,css,json}": [
-      "prettier --write",
-      "git add"
-    ]
+    "src/**/*.{js,jsx,css,json}": ["prettier --write", "git add"]
   }
 }
