@@ -9,7 +9,7 @@ export const api = {
 export const image = {
   method: "GET",
   headers: {
-    accept: "image/png"
+    accept: "image/jpeg"
   },
   mode: "same-origin"
 };
