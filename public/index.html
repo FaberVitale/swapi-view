@@ -131,11 +131,14 @@
         the webpack plugin used to defer css load
    -->
   <script>
-    var defCss = document.createElement("link");
-    var sc = document.body.querySelector("script");
-    defCss.rel = "stylesheet";
-    defCss.href = "__CSS__";
-    document.body.insertBefore(defCss, sc);
+    (function addCss() {
+      var defCss = document.createElement("link");
+      var sc = document.body.querySelector("script");
+      defCss.rel = "stylesheet";
+      defCss.type = "text/css";
+      defCss.href = "__CSS__";
+      document.body.insertBefore(defCss, sc);
+    })();
   </script>
   <noscript>
     <link rel="stylesheet" href="__CSS__">
