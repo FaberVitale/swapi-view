@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.0.3 3/03/2018
+ . tweaked index.html
+ - fixes in package.json
+ - tweaked App.test.js
+ - updated dependecies
+ - added more info to /about
+ - fixed mime type of the header request
+
 ## v1.0.2 1/03/2018
  - added Changelog
  - added .vscode folder to the repo
