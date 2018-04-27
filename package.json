@@ -8,29 +8,29 @@
     "url": "https://github.com/FaberVitale/swapi-view.git"
   },
   "dependencies": {
+    "chalk": "^2.3.0",
+    "cheerio": "^1.0.0-rc.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "flow-bin": "^0.71.0",
     "gh-pages": "^1.1.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.5",
     "lodash.get": "^4.4.2",
     "lodash.throttle": "^4.1.1",
     "material-ui": "^0.20.0",
+    "prettier": "1.12.1",
     "qs": "^6.5.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.0",
-    "recompose": "^0.26.0",
+    "react-scripts": "1.1.4",
+    "react-test-renderer": "^16.2.0",
+    "recompose": "^0.27.0",
     "redux": "^3.7.2",
     "redux-ignore": "^1.2.5",
     "reselect": "^3.0.1",
-    "chalk": "^2.3.0",
-    "cheerio": "^1.0.0-rc.2",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "flow-bin": "^0.66.0",
-    "husky": "^0.14.3",
-    "lint-staged": "^6.0.0",
-    "prettier": "1.9.2",
-    "react-test-renderer": "^16.2.0",
     "source-map-explorer": "^1.5.0"
   },
   "scripts": {
@@ -46,6 +46,9 @@
     "analyze": "source-map-explorer build/static/js/main.* --json"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,css,json}": ["prettier --write", "git add"]
+    "src/**/*.{js,jsx,css,json}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
