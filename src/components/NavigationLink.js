@@ -27,6 +27,14 @@ const buttonEnum = {
   LABEL_ICON: 3
 };
 
+type ButtonProps = {
+  tabIndex?: number,
+  disabled?: boolean,
+  containerElement: React.Element<*>,
+  label?: string,
+  icon?: React.Element<*>
+};
+
 const getButtonType = (icon, label) =>
   // $FlowFixMe
   (!!icon << 1) + (typeof label === "string");
@@ -56,10 +64,6 @@ class NavigationLink extends React.Component<Props> {
       onClick: this.blockIfDisabled
     };
 
-    const nextProps = {
-      ...rest
-    };
-
     /* if a link is disabled: 
      * 1 - we block pointer events (IE11 supports it too)
      * 2 - we preventDefault if the browser doesnt support pointer-events
@@ -73,27 +77,33 @@ class NavigationLink extends React.Component<Props> {
     if (this.props.disabled) {
       linkProps.className = "no-pointer-events";
       linkProps["aria-disabled"] = true;
-      nextProps.disabled = true;
     } else {
       linkProps.className = "pointer-events-auto";
     }
 
-    // we need to override flatbutton default 0 index
-    if (typeof tabbable === "boolean" && !tabbable) {
-      nextProps.tabIndex = -1;
+    const buttonProps: ButtonProps = {
+      ...rest,
+      containerElement: <Link {...linkProps} />
+    };
+
+    if (this.props.disabled) {
+      buttonProps.disabled = true;
     }
 
-    nextProps.containerElement = <Link {...linkProps} />;
+    // we need to override flatbutton default 0 index
+    if (typeof tabbable === "boolean" && !tabbable) {
+      buttonProps.tabIndex = -1;
+    }
 
     switch (buttonType) {
       case buttonEnum.LABEL:
-        return <FlatButton {...nextProps} label={label} />;
+        return <FlatButton {...buttonProps} label={label} />;
       case buttonEnum.ICON:
-        return <IconButton {...nextProps}>{icon}</IconButton>;
+        return <IconButton {...buttonProps}>{icon}</IconButton>;
       case buttonEnum.LABEL_ICON:
-        nextProps.label = label;
-        nextProps.icon = icon;
-        return <FlatButton {...nextProps} />;
+        buttonProps.label = label;
+        buttonProps.icon = icon;
+        return <FlatButton {...buttonProps} />;
       default:
         warn(
           `NavigationLink requires at least an icon or a label prop,
