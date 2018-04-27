@@ -10,7 +10,6 @@ const root = document.getElementById("root");
 
 if (root !== null) {
   if (root.hasChildNodes()) {
-    // $FlowFixMe - flow has not updated ReactDOM definitions to v16
     ReactDOM.hydrate(<App />, root);
   } else {
     ReactDOM.render(<App />, root);

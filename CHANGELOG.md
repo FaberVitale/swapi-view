@@ -1,7 +1,12 @@
 # Changelog
 
+## v1.0.4 27/03/2018
+ - misc improvements
+ - fixed icons types
+ - updated dependencies
+
 ## v1.0.3 3/03/2018
- . tweaked index.html
+ - tweaked index.html
  - fixes in package.json
  - tweaked App.test.js
  - updated dependecies
