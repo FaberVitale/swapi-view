@@ -14,7 +14,7 @@ export const fetchResourceAction = {
       name: "/people/page/5",
       type: "page",
       init: api,
-      url: "https://swapi.co/api/people?page=5",
+      url: "https://swapi.dev/api/people?page=5",
       query: null,
       match: {
         url: "/people/page/5",
@@ -32,7 +32,7 @@ export const fetchResourceAction = {
     request: {
       name: "/people/item/5",
       type: "item",
-      url: "https://swapi.co/api/people/5",
+      url: "https://swapi.dev/api/people/5",
       init: api,
       query: null,
       match: {
@@ -52,7 +52,7 @@ export const fetchResourceAction = {
       init: api,
       name: "/people/wookiee/5",
       type: "wookiee",
-      url: "https://swapi.co/api/people/5?format=wookiee",
+      url: "https://swapi.dev/api/people/5?format=wookiee",
       query: null,
       match: {
         url: "/people/wookiee/5",
@@ -70,7 +70,7 @@ export const fetchResourceAction = {
     request: {
       init: api,
       name: "/people/search/abba/1",
-      url: "https://swapi.co/api/people?search=abba&page=1",
+      url: "https://swapi.dev/api/people?search=abba&page=1",
       query: {
         q: "abba",
         page: "1"
@@ -169,7 +169,7 @@ export const fetchSuccessAction = {
     request: {
       init: api,
       name: "/people/search/luke/1",
-      url: "https://swapi.co/api/people/?search=luke&page=1",
+      url: "https://swapi.dev/api/people/?search=luke&page=1",
       query: {
         q: "luke",
         page: "1"
@@ -196,7 +196,7 @@ export const fetchSuccessAction = {
           meta: {
             created: "2014-12-09T13:50:51.644000Z",
             edited: "2014-12-20T21:17:56.891000Z",
-            url: "https://swapi.co/api/people/1/"
+            url: "https://swapi.dev/api/people/1/"
           },
           data: {
             name: "Luke Skywalker",
@@ -209,22 +209,22 @@ export const fetchSuccessAction = {
             gender: "male"
           },
           links: {
-            homeworld: "https://swapi.co/api/planets/1/",
+            homeworld: "https://swapi.dev/api/planets/1/",
             films: [
-              "https://swapi.co/api/films/2/",
-              "https://swapi.co/api/films/6/",
-              "https://swapi.co/api/films/3/",
-              "https://swapi.co/api/films/1/",
-              "https://swapi.co/api/films/7/"
+              "https://swapi.dev/api/films/2/",
+              "https://swapi.dev/api/films/6/",
+              "https://swapi.dev/api/films/3/",
+              "https://swapi.dev/api/films/1/",
+              "https://swapi.dev/api/films/7/"
             ],
-            species: ["https://swapi.co/api/species/1/"],
+            species: ["https://swapi.dev/api/species/1/"],
             vehicles: [
-              "https://swapi.co/api/vehicles/14/",
-              "https://swapi.co/api/vehicles/30/"
+              "https://swapi.dev/api/vehicles/14/",
+              "https://swapi.dev/api/vehicles/30/"
             ],
             starships: [
-              "https://swapi.co/api/starships/12/",
-              "https://swapi.co/api/starships/22/"
+              "https://swapi.dev/api/starships/12/",
+              "https://swapi.dev/api/starships/22/"
             ]
           }
         }

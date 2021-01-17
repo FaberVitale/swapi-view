@@ -1,7 +1,7 @@
 //@flow
 import qs from "qs";
 
-export const apiRoot = "https://swapi.co/api/";
+export const apiRoot = "https://swapi.dev/api/";
 export const endpoints = [
   "people",
   "planets",

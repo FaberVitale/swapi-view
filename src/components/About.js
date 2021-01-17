@@ -20,7 +20,7 @@ class About extends React.Component<Props> {
           <h3 style={theme.h3}>Description</h3>
           <p>
             A <em>(progressive)</em> web app that displays data from{" "}
-            <ExtLink href="https://swapi.co/">Swapi</ExtLink>
+            <ExtLink href="https://swapi.dev/">Swapi</ExtLink>
             {", a Star Wars restful API, created by Github user "}
             <ExtLink href="https://github.com/phalt">Phalt</ExtLink>.<br />
             Created with <ExtLink href="https://reactjs.org/">

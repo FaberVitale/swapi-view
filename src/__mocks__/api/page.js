@@ -1,7 +1,7 @@
 export default {
   count: 87,
-  next: "https://swapi.co/api/people/?page=4",
-  previous: "https://swapi.co/api/people/?page=2",
+  next: "https://swapi.dev/api/people/?page=4",
+  previous: "https://swapi.dev/api/people/?page=2",
   results: [
     {
       name: "Boba Fett",
@@ -12,18 +12,18 @@ export default {
       eye_color: "brown",
       birth_year: "31.5BBY",
       gender: "male",
-      homeworld: "https://swapi.co/api/planets/10/",
+      homeworld: "https://swapi.dev/api/planets/10/",
       films: [
-        "https://swapi.co/api/films/2/",
-        "https://swapi.co/api/films/5/",
-        "https://swapi.co/api/films/3/"
+        "https://swapi.dev/api/films/2/",
+        "https://swapi.dev/api/films/5/",
+        "https://swapi.dev/api/films/3/"
       ],
-      species: ["https://swapi.co/api/species/1/"],
+      species: ["https://swapi.dev/api/species/1/"],
       vehicles: [],
-      starships: ["https://swapi.co/api/starships/21/"],
+      starships: ["https://swapi.dev/api/starships/21/"],
       created: "2014-12-15T12:49:32.457000Z",
       edited: "2014-12-20T21:17:50.349000Z",
-      url: "https://swapi.co/api/people/22/"
+      url: "https://swapi.dev/api/people/22/"
     },
     {
       name: "IG-88",
@@ -34,14 +34,14 @@ export default {
       eye_color: "red",
       birth_year: "15BBY",
       gender: "none",
-      homeworld: "https://swapi.co/api/planets/28/",
-      films: ["https://swapi.co/api/films/2/"],
-      species: ["https://swapi.co/api/species/2/"],
+      homeworld: "https://swapi.dev/api/planets/28/",
+      films: ["https://swapi.dev/api/films/2/"],
+      species: ["https://swapi.dev/api/species/2/"],
       vehicles: [],
       starships: [],
       created: "2014-12-15T12:51:10.076000Z",
       edited: "2014-12-20T21:17:50.351000Z",
-      url: "https://swapi.co/api/people/23/"
+      url: "https://swapi.dev/api/people/23/"
     },
     {
       name: "Bossk",
@@ -52,14 +52,14 @@ export default {
       eye_color: "red",
       birth_year: "53BBY",
       gender: "male",
-      homeworld: "https://swapi.co/api/planets/29/",
-      films: ["https://swapi.co/api/films/2/"],
-      species: ["https://swapi.co/api/species/7/"],
+      homeworld: "https://swapi.dev/api/planets/29/",
+      films: ["https://swapi.dev/api/films/2/"],
+      species: ["https://swapi.dev/api/species/7/"],
       vehicles: [],
       starships: [],
       created: "2014-12-15T12:53:49.297000Z",
       edited: "2014-12-20T21:17:50.355000Z",
-      url: "https://swapi.co/api/people/24/"
+      url: "https://swapi.dev/api/people/24/"
     },
     {
       name: "Lando Calrissian",
@@ -70,14 +70,17 @@ export default {
       eye_color: "brown",
       birth_year: "31BBY",
       gender: "male",
-      homeworld: "https://swapi.co/api/planets/30/",
-      films: ["https://swapi.co/api/films/2/", "https://swapi.co/api/films/3/"],
-      species: ["https://swapi.co/api/species/1/"],
+      homeworld: "https://swapi.dev/api/planets/30/",
+      films: [
+        "https://swapi.dev/api/films/2/",
+        "https://swapi.dev/api/films/3/"
+      ],
+      species: ["https://swapi.dev/api/species/1/"],
       vehicles: [],
-      starships: ["https://swapi.co/api/starships/10/"],
+      starships: ["https://swapi.dev/api/starships/10/"],
       created: "2014-12-15T12:56:32.683000Z",
       edited: "2014-12-20T21:17:50.357000Z",
-      url: "https://swapi.co/api/people/25/"
+      url: "https://swapi.dev/api/people/25/"
     },
     {
       name: "Lobot",
@@ -88,14 +91,14 @@ export default {
       eye_color: "blue",
       birth_year: "37BBY",
       gender: "male",
-      homeworld: "https://swapi.co/api/planets/6/",
-      films: ["https://swapi.co/api/films/2/"],
-      species: ["https://swapi.co/api/species/1/"],
+      homeworld: "https://swapi.dev/api/planets/6/",
+      films: ["https://swapi.dev/api/films/2/"],
+      species: ["https://swapi.dev/api/species/1/"],
       vehicles: [],
       starships: [],
       created: "2014-12-15T13:01:57.178000Z",
       edited: "2014-12-20T21:17:50.359000Z",
-      url: "https://swapi.co/api/people/26/"
+      url: "https://swapi.dev/api/people/26/"
     },
     {
       name: "Ackbar",
@@ -106,14 +109,17 @@ export default {
       eye_color: "orange",
       birth_year: "41BBY",
       gender: "male",
-      homeworld: "https://swapi.co/api/planets/31/",
-      films: ["https://swapi.co/api/films/3/", "https://swapi.co/api/films/7/"],
-      species: ["https://swapi.co/api/species/8/"],
+      homeworld: "https://swapi.dev/api/planets/31/",
+      films: [
+        "https://swapi.dev/api/films/3/",
+        "https://swapi.dev/api/films/7/"
+      ],
+      species: ["https://swapi.dev/api/species/8/"],
       vehicles: [],
       starships: [],
       created: "2014-12-18T11:07:50.584000Z",
       edited: "2014-12-20T21:17:50.362000Z",
-      url: "https://swapi.co/api/people/27/"
+      url: "https://swapi.dev/api/people/27/"
     },
     {
       name: "Mon Mothma",
@@ -124,14 +130,14 @@ export default {
       eye_color: "blue",
       birth_year: "48BBY",
       gender: "female",
-      homeworld: "https://swapi.co/api/planets/32/",
-      films: ["https://swapi.co/api/films/3/"],
-      species: ["https://swapi.co/api/species/1/"],
+      homeworld: "https://swapi.dev/api/planets/32/",
+      films: ["https://swapi.dev/api/films/3/"],
+      species: ["https://swapi.dev/api/species/1/"],
       vehicles: [],
       starships: [],
       created: "2014-12-18T11:12:38.895000Z",
       edited: "2014-12-20T21:17:50.364000Z",
-      url: "https://swapi.co/api/people/28/"
+      url: "https://swapi.dev/api/people/28/"
     },
     {
       name: "Arvel Crynyd",
@@ -142,14 +148,14 @@ export default {
       eye_color: "brown",
       birth_year: "unknown",
       gender: "male",
-      homeworld: "https://swapi.co/api/planets/28/",
-      films: ["https://swapi.co/api/films/3/"],
-      species: ["https://swapi.co/api/species/1/"],
+      homeworld: "https://swapi.dev/api/planets/28/",
+      films: ["https://swapi.dev/api/films/3/"],
+      species: ["https://swapi.dev/api/species/1/"],
       vehicles: [],
-      starships: ["https://swapi.co/api/starships/28/"],
+      starships: ["https://swapi.dev/api/starships/28/"],
       created: "2014-12-18T11:16:33.020000Z",
       edited: "2014-12-20T21:17:50.367000Z",
-      url: "https://swapi.co/api/people/29/"
+      url: "https://swapi.dev/api/people/29/"
     },
     {
       name: "Wicket Systri Warrick",
@@ -160,14 +166,14 @@ export default {
       eye_color: "brown",
       birth_year: "8BBY",
       gender: "male",
-      homeworld: "https://swapi.co/api/planets/7/",
-      films: ["https://swapi.co/api/films/3/"],
-      species: ["https://swapi.co/api/species/9/"],
+      homeworld: "https://swapi.dev/api/planets/7/",
+      films: ["https://swapi.dev/api/films/3/"],
+      species: ["https://swapi.dev/api/species/9/"],
       vehicles: [],
       starships: [],
       created: "2014-12-18T11:21:58.954000Z",
       edited: "2014-12-20T21:17:50.369000Z",
-      url: "https://swapi.co/api/people/30/"
+      url: "https://swapi.dev/api/people/30/"
     },
     {
       name: "Nien Nunb",
@@ -178,14 +184,14 @@ export default {
       eye_color: "black",
       birth_year: "unknown",
       gender: "male",
-      homeworld: "https://swapi.co/api/planets/33/",
-      films: ["https://swapi.co/api/films/3/"],
-      species: ["https://swapi.co/api/species/10/"],
+      homeworld: "https://swapi.dev/api/planets/33/",
+      films: ["https://swapi.dev/api/films/3/"],
+      species: ["https://swapi.dev/api/species/10/"],
       vehicles: [],
-      starships: ["https://swapi.co/api/starships/10/"],
+      starships: ["https://swapi.dev/api/starships/10/"],
       created: "2014-12-18T11:26:18.541000Z",
       edited: "2014-12-20T21:17:50.371000Z",
-      url: "https://swapi.co/api/people/31/"
+      url: "https://swapi.dev/api/people/31/"
     }
   ]
 };
