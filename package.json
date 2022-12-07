@@ -20,7 +20,7 @@
     "lodash.throttle": "^4.1.1",
     "material-ui": "^0.20.0",
     "prettier": "1.12.1",
-    "qs": "^6.5.1",
+    "qs": "^6.5.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
